@@ -7,7 +7,8 @@ target 'SwiftTemplate' do
 
   # Pods for SwiftTemplate
 
-  pod 'SnapKit'
+  pod 'SnapKit'       # A Swift Autolayout DSL for iOS & OS X
+  pod 'SwiftLint'     # A tool to enforce Swift style and conventions.
 
   target 'SwiftTemplateTests' do
     inherit! :search_paths
