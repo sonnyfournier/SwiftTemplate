@@ -21,7 +21,7 @@ class XcodeProjectRenamer: NSObject {
         static let White = "\u{001B}[0;37m"
     }
 
-    static let oldName = "SwiftTemplate"
+    static let templateName = "SwiftTemplate"
     static let scriptName = "project-renamer.swift"
 
     // MARK: - Properties
@@ -29,19 +29,19 @@ class XcodeProjectRenamer: NSObject {
     let fileManager = FileManager.default
     var processedPaths = [String]()
 
-    let newName: String
+    let projectName: String
 
     // MARK: - Init
 
-    init(newName: String) {
-        self.newName = newName
+    init(projectName: String) {
+        self.projectName = projectName
     }
 
     // MARK: - API
 
     func run() {
-        print("\n\(Color.Green)------------------------------------------")
-        print("\(Color.Green)Rename Xcode Project from [\(XcodeProjectRenamer.oldName)] to [\(newName)]")
+        print("\(Color.Green)\n------------------------------------------")
+        print("\(Color.Green)Rename Xcode Project from [\(XcodeProjectRenamer.templateName)] to [\(projectName)]")
         print("\(Color.Green)Current Path: \(fileManager.currentDirectoryPath)")
         print("\(Color.Green)------------------------------------------\n")
 
@@ -50,13 +50,14 @@ class XcodeProjectRenamer: NSObject {
         if validatePath(currentPath) {
             removePods()
             enumeratePath(currentPath)
+            renameItem(atPath: currentPath.appending("/../\(XcodeProjectRenamer.templateName)"))
             reinstallPods()
             uninstallScript()
         } else {
-            print("\(Color.Red)Xcode project or workspace with name: [\(XcodeProjectRenamer.oldName)] is not found at current path.")
+            print("\(Color.Red)No Xcode project/workspace named [\(XcodeProjectRenamer.templateName)] was found at current path.")
         }
 
-        print("\n\(Color.Green)------------------------------------------")
+        print("\(Color.Green)\n------------------------------------------")
         print("\(Color.Green)Xcode Project Rename Finished!")
         print("\(Color.Green)------------------------------------------\n")
     }
@@ -64,8 +65,8 @@ class XcodeProjectRenamer: NSObject {
     // MARK: - Helpers
 
     private func validatePath(_ path: String) -> Bool {
-        let projectPath = path.appending("/\(XcodeProjectRenamer.oldName).xcodeproj")
-        let workspacePath = path.appending("/\(XcodeProjectRenamer.oldName).xcworkspace")
+        let projectPath = path.appending("/\(XcodeProjectRenamer.templateName).xcodeproj")
+        let workspacePath = path.appending("/\(XcodeProjectRenamer.templateName).xcworkspace")
         let isValid = fileManager.fileExists(atPath: projectPath) || fileManager.fileExists(atPath: workspacePath)
         return isValid
     }
@@ -95,11 +96,8 @@ class XcodeProjectRenamer: NSObject {
     }
 
     private func shouldSkip(_ element: String) -> Bool {
-        guard
-            !element.hasPrefix("."),
+        guard !element.hasPrefix("."),
             !element.contains(".DS_Store"),
-            !element.contains("Carthage"),
-            !element.contains("Pods"),
             !element.contains("fastlane")
         else { return true }
 
@@ -115,8 +113,8 @@ class XcodeProjectRenamer: NSObject {
     private func updateContentsOfFile(atPath path: String) {
         do {
             let oldContent = try String(contentsOfFile: path, encoding: .utf8)
-            if oldContent.contains(XcodeProjectRenamer.oldName) {
-                let newContent = oldContent.replacingOccurrences(of: XcodeProjectRenamer.oldName, with: newName)
+            if oldContent.contains(XcodeProjectRenamer.templateName) {
+                let newContent = oldContent.replacingOccurrences(of: XcodeProjectRenamer.templateName, with: projectName)
                 try newContent.write(toFile: path, atomically: true, encoding: .utf8)
                 print("\(Color.White)-- Updated: \(path)")
             }
@@ -128,8 +126,8 @@ class XcodeProjectRenamer: NSObject {
     private func renameItem(atPath path: String) {
         do {
             let oldItemName = URL(fileURLWithPath: path).lastPathComponent
-            if oldItemName.contains(XcodeProjectRenamer.oldName) {
-                let newItemName = oldItemName.replacingOccurrences(of: XcodeProjectRenamer.oldName, with: newName)
+            if oldItemName.contains(XcodeProjectRenamer.templateName) {
+                let newItemName = oldItemName.replacingOccurrences(of: XcodeProjectRenamer.templateName, with: projectName)
                 let directoryURL = URL(fileURLWithPath: path).deletingLastPathComponent()
                 let newPath = directoryURL.appendingPathComponent(newItemName).path
                 try fileManager.moveItem(atPath: path, toPath: newPath)
@@ -191,11 +189,12 @@ class XcodeProjectRenamer: NSObject {
 }
 
 let arguments = CommandLine.arguments
+
 if arguments.count == 2 {
-    let newName = arguments[1].replacingOccurrences(of: " ", with: "")
-    let xpr = XcodeProjectRenamer(newName: newName)
+    let projectName = arguments[1].replacingOccurrences(of: " ", with: "")
+    let xpr = XcodeProjectRenamer(projectName: projectName)
     xpr.run()
 } else {
     print("\(XcodeProjectRenamer.Color.Red)Invalid number of arguments.")
-    print("\(XcodeProjectRenamer.Color.Red)Usage:   ./\(XcodeProjectRenamer.scriptName) new_project_name")
+    print("\(XcodeProjectRenamer.Color.Red)Usage:   ./\(XcodeProjectRenamer.scriptName) project_name")
 }
