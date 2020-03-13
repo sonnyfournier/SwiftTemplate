@@ -16,6 +16,8 @@
 		E06B4574241A848C00D107E3 /* SwiftTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B4573241A848C00D107E3 /* SwiftTemplateTests.swift */; };
 		E06B457F241A848C00D107E3 /* SwiftTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B457E241A848C00D107E3 /* SwiftTemplateUITests.swift */; };
 		E06B4595241A9F9500D107E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B4594241A9F9500D107E3 /* Constants.swift */; };
+		E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B459A241B7B0C00D107E3 /* UIView.swift */; };
+		E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B459C241B7B8400D107E3 /* UITableViewCell.swift */; };
 		F177624E273FB3683E6ADA4E /* Pods_SwiftTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9466FE6463D3D6CFACA050D5 /* Pods_SwiftTemplateTests.framework */; };
 		FC20494ACCF36DEAD83AD728 /* Pods_SwiftTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313670E38E5A5365E9E47239 /* Pods_SwiftTemplate.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		E06B457E241A848C00D107E3 /* SwiftTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTemplateUITests.swift; sourceTree = "<group>"; };
 		E06B4580241A848C00D107E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E06B4594241A9F9500D107E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E06B459A241B7B0C00D107E3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E06B459C241B7B8400D107E3 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		F216C1CA9C358780D1964524 /* Pods_SwiftTemplate_SwiftTemplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTemplate_SwiftTemplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9766D0971FBE272EC6E8A9A /* Pods-SwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplate.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplate/Pods-SwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +223,7 @@
 		E06B4593241A9F8500D107E3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E06B4599241B7AFC00D107E3 /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,6 +251,15 @@
 				E06B456A241A848C00D107E3 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E06B4599241B7AFC00D107E3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E06B459A241B7B0C00D107E3 /* UIView.swift */,
+				E06B459C241B7B8400D107E3 /* UITableViewCell.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,8 +518,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */,
 				E06B4561241A848900D107E3 /* ViewController.swift in Sources */,
 				E06B455D241A848900D107E3 /* AppDelegate.swift in Sources */,
+				E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */,
 				E06B455F241A848900D107E3 /* SceneDelegate.swift in Sources */,
 				E06B4595241A9F9500D107E3 /* Constants.swift in Sources */,
 			);
@@ -675,7 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
-				INFOPLIST_FILE = SwiftTemplate/Info.plist;
+				INFOPLIST_FILE = "SwiftTemplate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -694,7 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
-				INFOPLIST_FILE = SwiftTemplate/Info.plist;
+				INFOPLIST_FILE = "SwiftTemplate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
