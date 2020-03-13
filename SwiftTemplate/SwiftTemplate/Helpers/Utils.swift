@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Elegant alternative to !bool
+/// - Parameter value: the boolean value to check
 func not(_ value: Bool) -> Bool {
     return !value
 }
