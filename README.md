@@ -17,31 +17,13 @@ This template includes the following features:
 
 # Installation
 
-1. Create a repository for your project
+1. Press the `Use this template` button at the top of this page (See: [Creating a repository from a template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template))
 
-2. Clone this repository
+2. From your repository, go to `SwiftTemplate/` and launch the `project-renamer` with the choosen name as argument
 ```
-git clone git@github.com:R3J3CT3D/SwiftTemplate.git
-```
-
-3. Move into SwiftTemplate
-```
-cd SwiftTemplate/
-```
-
-4. Mirror push into your repository
-
-```
-git push --mirror https://github.com/username/your-repository.git
-```
-
-5. From your repository, go to `SwiftTemplate/` and launch the `project-renamer` with the choosen name as argument
-```
-cd SwiftTemplate/
-
 ./swift-renamer.swift your-project-name
 ```
 
-6. Double click on the `.xcworkspace`, if Xcode displays an error message such as `Cannot open file`, press `Ok`, then close Xcode and reopen the `.xcworkspace`
+3. Double click on the `.xcworkspace`, if Xcode displays an error message such as `Cannot open file`, press `Ok`, then close Xcode and reopen the `.xcworkspace`
 
-7. You're good to go!
+4. You're good to go!
