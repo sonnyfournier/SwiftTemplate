@@ -145,7 +145,6 @@
 			children = (
 				E06B458D241A9F4A00D107E3 /* Helpers */,
 				E06B458E241A9F5200D107E3 /* Models */,
-				E06B458F241A9F5800D107E3 /* Modules */,
 				E06B4592241A9F6E00D107E3 /* Resources */,
 				E06B4590241A9F6000D107E3 /* Screens */,
 				E06B4591241A9F6700D107E3 /* Services */,
@@ -186,13 +185,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		E06B458F241A9F5800D107E3 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		E06B4590241A9F6000D107E3 /* Screens */ = {
