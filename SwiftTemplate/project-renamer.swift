@@ -21,6 +21,7 @@ class XcodeProjectRenamer: NSObject {
         static let White = "\u{001B}[0;37m"
     }
 
+    static let oldName = "SwiftTemplate"
     static let scriptName = "project-renamer.swift"
 
     // MARK: - Properties
@@ -28,13 +29,11 @@ class XcodeProjectRenamer: NSObject {
     let fileManager = FileManager.default
     var processedPaths = [String]()
 
-    let oldName: String
     let newName: String
 
     // MARK: - Init
 
-    init(oldName: String, newName: String) {
-        self.oldName = oldName
+    init(newName: String) {
         self.newName = newName
     }
 
@@ -192,12 +191,11 @@ class XcodeProjectRenamer: NSObject {
 }
 
 let arguments = CommandLine.arguments
-if arguments.count == 3 {
-    let oldName = arguments[1]
-    let newName = arguments[2].replacingOccurrences(of: " ", with: "")
-    let xpr = XcodeProjectRenamer(oldName: oldName, newName: newName)
+if arguments.count == 2 {
+    let newName = arguments[1].replacingOccurrences(of: " ", with: "")
+    let xpr = XcodeProjectRenamer(newName: newName)
     xpr.run()
 } else {
     print("\(XcodeProjectRenamer.Color.Red)Invalid number of arguments.")
-    print("\(XcodeProjectRenamer.Color.Red)Usage:   ./\(XcodeProjectRenamer.scriptName) old_project_name new_project_name")
+    print("\(XcodeProjectRenamer.Color.Red)Usage:   ./\(XcodeProjectRenamer.scriptName) new_project_name")
 }
