@@ -684,6 +684,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
 				INFOPLIST_FILE = "SwiftTemplate/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -703,6 +704,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
 				INFOPLIST_FILE = "SwiftTemplate/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -718,7 +720,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 489F0CF10CBCCAA2A90B33C2 /* Pods-SwiftTemplateTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
@@ -741,7 +742,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6737C51F88F2971D93F42B80 /* Pods-SwiftTemplateTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
@@ -764,7 +764,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0854857AF6097024125FB746 /* Pods-SwiftTemplate-SwiftTemplateUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
 				INFOPLIST_FILE = SwiftTemplateUITests/Info.plist;
@@ -785,7 +784,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48D811C7855023F2F93328A8 /* Pods-SwiftTemplate-SwiftTemplateUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39JQZSYJ8T;
 				INFOPLIST_FILE = SwiftTemplateUITests/Info.plist;
