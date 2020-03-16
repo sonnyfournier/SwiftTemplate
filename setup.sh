@@ -50,7 +50,7 @@ fi
 ####################################
 echo "- Remove pods"
 
-rm -rf SwiftTemplate/Pods/
+rm -rf Pods/
 
 
 ####################################
@@ -75,7 +75,7 @@ unset LANG && find . -type f -exec sed -i '' -e "s/SwiftTemplate/$projectName/g"
 ####################################
 echo "- Install pods"
 
-export LANG=en_US.UTF-8 && cd $projectName/ && pod install
+export LANG=en_US.UTF-8 && pod install &> /dev/null
 
 
 ####################################
@@ -91,12 +91,12 @@ git config core.hooksPath .githooks
 ####################################
 echo "- Open project"
 
-open ProjectName.xcworkspace
+open $projectName.xcworkspace
 
 
 ####################################
 ##         Autodestuction         ##
 ####################################
-echo "- Autodestruction"$
+echo "- Autodestruction"
 
 rm ./setup.sh
