@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C659BFB877085A6C5975828 /* libPods-SwiftTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2648B702906A926B101994C3 /* libPods-SwiftTemplateTests.a */; };
 		3DAB272AD86CA62436BCFC44 /* libPods-SwiftTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA94C28A1DBEDCC69EB44661 /* libPods-SwiftTemplate.a */; };
 		97D0845AA5862F1A0A7EB6E0 /* libPods-SwiftTemplate-SwiftTemplateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA1AA79EECD4717DEEE074F /* libPods-SwiftTemplate-SwiftTemplateUITests.a */; };
+		E00932822430038300CEC938 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00932812430038300CEC938 /* UICollectionViewCell.swift */; };
 		E06B455D241A848900D107E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B455C241A848900D107E3 /* AppDelegate.swift */; };
 		E06B455F241A848900D107E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B455E241A848900D107E3 /* SceneDelegate.swift */; };
 		E06B4561241A848900D107E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B4560241A848900D107E3 /* HomeViewController.swift */; };
@@ -49,6 +50,7 @@
 		4FA1AA79EECD4717DEEE074F /* libPods-SwiftTemplate-SwiftTemplateUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftTemplate-SwiftTemplateUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6737C51F88F2971D93F42B80 /* Pods-SwiftTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplateTests/Pods-SwiftTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA94C28A1DBEDCC69EB44661 /* libPods-SwiftTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00932812430038300CEC938 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		E06B4559241A848900D107E3 /* SwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06B455C241A848900D107E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E06B455E241A848900D107E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			children = (
 				E06B459A241B7B0C00D107E3 /* UIView.swift */,
 				E06B459C241B7B8400D107E3 /* UITableViewCell.swift */,
+				E00932812430038300CEC938 /* UICollectionViewCell.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			files = (
 				E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */,
 				E06B4561241A848900D107E3 /* HomeViewController.swift in Sources */,
+				E00932822430038300CEC938 /* UICollectionViewCell.swift in Sources */,
 				E06B455D241A848900D107E3 /* AppDelegate.swift in Sources */,
 				E06B459F241BEBEB00D107E3 /* Utils.swift in Sources */,
 				E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */,
