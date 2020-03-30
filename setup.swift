@@ -169,13 +169,13 @@ class XcodeProjectSetuper: NSObject {
     private func setupGitHooks() {
         print("\(Color.White)-- Setup git hooks")
 
-        guard let gitPath = shell(launchPath: whichBinPath,
-                                  arguments: ["git"])?.replacingOccurrences(of: "\n", with: "") else {
-            print("\(Color.Red)Error: command 'git' was not found.")
+        guard let cpPath = shell(launchPath: whichBinPath,
+                                  arguments: ["cp"])?.replacingOccurrences(of: "\n", with: "") else {
+            print("\(Color.Red)Error: command 'cp' was not found.")
             exit(0)
         }
 
-        _ = shell(launchPath: gitPath, arguments: ["config", "core.hookPath", ".githooks"])
+        _ = shell(launchPath: cpPath, arguments: [".githooks/*", ".git/hooks/"])
     }
 
     private func openProject() {
