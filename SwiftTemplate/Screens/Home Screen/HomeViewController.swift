@@ -10,7 +10,7 @@ import SnapKit
 
 class HomeViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - UI elements
     let label = UILabel()
 
     // MARK: - Life cycle
@@ -24,14 +24,14 @@ class HomeViewController: UIViewController {
     }
 
     // MARK: - UI setup
-    func setupUI() {
+    private func setupUI() {
         view.backgroundColor = .systemBackground
 
         label.text = "Welcome to SwiftTemplate"
     }
 
     // MARK: - Constraints setup
-    func setupConstraints() {
+    private func setupConstraints() {
         label.snp.makeConstraints {
             $0.center.equalToSuperview()
         }
