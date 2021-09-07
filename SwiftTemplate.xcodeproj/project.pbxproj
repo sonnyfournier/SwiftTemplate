@@ -23,6 +23,7 @@
 		E06F944626E7783800ED63A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E06F944826E7783800ED63A7 /* Localizable.strings */; };
 		E06F944E26E779E000ED63A7 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944D26E779E000ED63A7 /* Observers.swift */; };
 		E06F945026E77A1100ED63A7 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944F26E77A1100ED63A7 /* Preferences.swift */; };
+		E06F945226E77B6400ED63A7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F945126E77B6400ED63A7 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E06F944A26E7784300ED63A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E06F944D26E779E000ED63A7 /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
 		E06F944F26E77A1100ED63A7 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		E06F945126E77B6400ED63A7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F9766D0971FBE272EC6E8A9A /* Pods-SwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplate.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplate/Pods-SwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 		E06B4596241A9FA200D107E3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E06F945126E77B6400ED63A7 /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06F945226E77B6400ED63A7 /* BaseViewController.swift in Sources */,
 				E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */,
 				E06F943F26E7768600ED63A7 /* UIStackView.swift in Sources */,
 				E06F945026E77A1100ED63A7 /* Preferences.swift in Sources */,
