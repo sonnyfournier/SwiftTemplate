@@ -7,4 +7,11 @@
 
 import Foundation
 
-struct Constants {}
+struct Constants {
+
+    // MARK: - Preferences
+    struct Preferences {
+        //
+    }
+
+}

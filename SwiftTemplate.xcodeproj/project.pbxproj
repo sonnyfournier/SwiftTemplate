@@ -22,6 +22,7 @@
 		E06F944326E7780400ED63A7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944226E7780400ED63A7 /* Localization.swift */; };
 		E06F944626E7783800ED63A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E06F944826E7783800ED63A7 /* Localizable.strings */; };
 		E06F944E26E779E000ED63A7 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944D26E779E000ED63A7 /* Observers.swift */; };
+		E06F945026E77A1100ED63A7 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944F26E77A1100ED63A7 /* Preferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E06F944726E7783800ED63A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E06F944A26E7784300ED63A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E06F944D26E779E000ED63A7 /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
+		E06F944F26E77A1100ED63A7 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		F9766D0971FBE272EC6E8A9A /* Pods-SwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplate.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplate/Pods-SwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				E06B4594241A9F9500D107E3 /* Constants.swift */,
 				E06F944226E7780400ED63A7 /* Localization.swift */,
 				E06F944D26E779E000ED63A7 /* Observers.swift */,
+				E06F944F26E77A1100ED63A7 /* Preferences.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */,
 				E06F943F26E7768600ED63A7 /* UIStackView.swift in Sources */,
+				E06F945026E77A1100ED63A7 /* Preferences.swift in Sources */,
 				E06B4561241A848900D107E3 /* HomeViewController.swift in Sources */,
 				E00932822430038300CEC938 /* UICollectionViewCell.swift in Sources */,
 				E06B455D241A848900D107E3 /* AppDelegate.swift in Sources */,
