@@ -21,6 +21,7 @@
 		E06F943F26E7768600ED63A7 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F943E26E7768600ED63A7 /* UIStackView.swift */; };
 		E06F944326E7780400ED63A7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944226E7780400ED63A7 /* Localization.swift */; };
 		E06F944626E7783800ED63A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E06F944826E7783800ED63A7 /* Localizable.strings */; };
+		E06F944E26E779E000ED63A7 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944D26E779E000ED63A7 /* Observers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E06F944226E7780400ED63A7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		E06F944726E7783800ED63A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E06F944A26E7784300ED63A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E06F944D26E779E000ED63A7 /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
 		F9766D0971FBE272EC6E8A9A /* Pods-SwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplate.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplate/Pods-SwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				E06B4593241A9F8500D107E3 /* Extensions */,
 				E06B4594241A9F9500D107E3 /* Constants.swift */,
 				E06F944226E7780400ED63A7 /* Localization.swift */,
+				E06F944D26E779E000ED63A7 /* Observers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */,
 				E06F944326E7780400ED63A7 /* Localization.swift in Sources */,
 				E06B455F241A848900D107E3 /* SceneDelegate.swift in Sources */,
+				E06F944E26E779E000ED63A7 /* Observers.swift in Sources */,
 				E06F943D26E7766000ED63A7 /* UIEdgeInsets.swift in Sources */,
 				E06B4595241A9F9500D107E3 /* Constants.swift in Sources */,
 			);
