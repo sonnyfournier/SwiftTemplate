@@ -17,7 +17,8 @@
 		E06B4595241A9F9500D107E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B4594241A9F9500D107E3 /* Constants.swift */; };
 		E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B459A241B7B0C00D107E3 /* UIView.swift */; };
 		E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B459C241B7B8400D107E3 /* UITableViewCell.swift */; };
-		E06B459F241BEBEB00D107E3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B459E241BEBEB00D107E3 /* Utils.swift */; };
+		E06F943D26E7766000ED63A7 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F943C26E7766000ED63A7 /* UIEdgeInsets.swift */; };
+		E06F943F26E7768600ED63A7 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F943E26E7768600ED63A7 /* UIStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +41,8 @@
 		E06B4594241A9F9500D107E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E06B459A241B7B0C00D107E3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E06B459C241B7B8400D107E3 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
-		E06B459E241BEBEB00D107E3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E06F943C26E7766000ED63A7 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		E06F943E26E7768600ED63A7 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		F9766D0971FBE272EC6E8A9A /* Pods-SwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplate.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplate/Pods-SwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +117,6 @@
 			children = (
 				E06B4593241A9F8500D107E3 /* Extensions */,
 				E06B4594241A9F9500D107E3 /* Constants.swift */,
-				E06B459E241BEBEB00D107E3 /* Utils.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -191,6 +192,8 @@
 				E06B459A241B7B0C00D107E3 /* UIView.swift */,
 				E06B459C241B7B8400D107E3 /* UITableViewCell.swift */,
 				E00932812430038300CEC938 /* UICollectionViewCell.swift */,
+				E06F943C26E7766000ED63A7 /* UIEdgeInsets.swift */,
+				E06F943E26E7768600ED63A7 /* UIStackView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -310,12 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06B459B241B7B0C00D107E3 /* UIView.swift in Sources */,
+				E06F943F26E7768600ED63A7 /* UIStackView.swift in Sources */,
 				E06B4561241A848900D107E3 /* HomeViewController.swift in Sources */,
 				E00932822430038300CEC938 /* UICollectionViewCell.swift in Sources */,
 				E06B455D241A848900D107E3 /* AppDelegate.swift in Sources */,
-				E06B459F241BEBEB00D107E3 /* Utils.swift in Sources */,
 				E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */,
 				E06B455F241A848900D107E3 /* SceneDelegate.swift in Sources */,
+				E06F943D26E7766000ED63A7 /* UIEdgeInsets.swift in Sources */,
 				E06B4595241A9F9500D107E3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
