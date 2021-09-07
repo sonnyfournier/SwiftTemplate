@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
     private func setupUI() {
         view.backgroundColor = .systemBackground
 
-        label.text = "Welcome to SwiftTemplate"
+        label.text = String(format: localizedString(for: "welcome_to"), "SwiftTemplate")
     }
 
     // MARK: - Constraints setup

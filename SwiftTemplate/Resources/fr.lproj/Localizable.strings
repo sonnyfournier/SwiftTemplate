@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwiftTemplate
+
+  Created by Sonny on 07/09/2021.
+  
+*/
+
+"welcome_to" = "Bienvenu sur %@";

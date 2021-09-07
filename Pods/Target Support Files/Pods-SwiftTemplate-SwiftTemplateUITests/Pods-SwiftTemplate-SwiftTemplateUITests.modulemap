@@ -1,6 +1,0 @@
-module Pods_SwiftTemplate_SwiftTemplateUITests {
-  umbrella header "Pods-SwiftTemplate-SwiftTemplateUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

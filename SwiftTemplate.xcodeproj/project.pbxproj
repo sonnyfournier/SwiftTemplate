@@ -19,6 +19,8 @@
 		E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B459C241B7B8400D107E3 /* UITableViewCell.swift */; };
 		E06F943D26E7766000ED63A7 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F943C26E7766000ED63A7 /* UIEdgeInsets.swift */; };
 		E06F943F26E7768600ED63A7 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F943E26E7768600ED63A7 /* UIStackView.swift */; };
+		E06F944326E7780400ED63A7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06F944226E7780400ED63A7 /* Localization.swift */; };
+		E06F944626E7783800ED63A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E06F944826E7783800ED63A7 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		E06B459C241B7B8400D107E3 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		E06F943C26E7766000ED63A7 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		E06F943E26E7768600ED63A7 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		E06F944226E7780400ED63A7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		E06F944726E7783800ED63A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E06F944A26E7784300ED63A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9766D0971FBE272EC6E8A9A /* Pods-SwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTemplate.release.xcconfig"; path = "Target Support Files/Pods-SwiftTemplate/Pods-SwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +122,7 @@
 			children = (
 				E06B4593241A9F8500D107E3 /* Extensions */,
 				E06B4594241A9F9500D107E3 /* Constants.swift */,
+				E06F944226E7780400ED63A7 /* Localization.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			children = (
 				E06B4565241A848C00D107E3 /* Assets.xcassets */,
 				E06B4567241A848C00D107E3 /* LaunchScreen.storyboard */,
+				E06F944826E7783800ED63A7 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -227,7 +234,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					E06B4558241A848900D107E3 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -241,6 +248,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = E06B4550241A848900D107E3;
 			productRefGroup = E06B455A241A848900D107E3 /* Products */;
@@ -258,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06B4569241A848C00D107E3 /* LaunchScreen.storyboard in Resources */,
+				E06F944626E7783800ED63A7 /* Localizable.strings in Resources */,
 				E06B4566241A848C00D107E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +327,7 @@
 				E00932822430038300CEC938 /* UICollectionViewCell.swift in Sources */,
 				E06B455D241A848900D107E3 /* AppDelegate.swift in Sources */,
 				E06B459D241B7B8400D107E3 /* UITableViewCell.swift in Sources */,
+				E06F944326E7780400ED63A7 /* Localization.swift in Sources */,
 				E06B455F241A848900D107E3 /* SceneDelegate.swift in Sources */,
 				E06F943D26E7766000ED63A7 /* UIEdgeInsets.swift in Sources */,
 				E06B4595241A9F9500D107E3 /* Constants.swift in Sources */,
@@ -335,6 +345,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E06F944826E7783800ED63A7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06F944726E7783800ED63A7 /* en */,
+				E06F944A26E7784300ED63A7 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -342,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -364,6 +384,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -402,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -424,6 +446,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
