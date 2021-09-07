@@ -29,3 +29,7 @@ This template includes the following features:
 # Troubleshooting
 
 If Xcode display an error message such as `Cannot open file` while opening the `.xcworkspace`, press `Ok`, then close Xcode and reopen the `.xcworkspace`
+
+# Credits
+
+`setup.swift` is based on [Xcode Project Renamer](https://github.com/appculture/xcode-project-renamer) by [appculture](https://github.com/appculture)
